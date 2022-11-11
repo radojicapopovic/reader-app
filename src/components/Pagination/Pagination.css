@@ -1,0 +1,35 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  
+  .page-number {
+    list-style: none;
+  }
+  
+  .page-link {
+    border: 1px solid #979696;
+    margin: 0 4px;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: black;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .active {
+    background-color: teal;
+    color: white;
+    border: 1px solid teal;
+  }
+  
+  .page-number :hover:not(.active) {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  @media screen and (max-width: 500px) {
+    .page-link {
+      padding: 4px 8px;
+    }
+  }
