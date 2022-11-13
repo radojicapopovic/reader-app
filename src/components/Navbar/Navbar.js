@@ -36,16 +36,17 @@ const Navbar = () => {
           }
         >
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link to="/" className="nav-linkk">
-                Home
+            <li>
+              <Link to="/mylist" className="mylist-link">
+                MyList
               </Link>
             </li>
-            <li className="nav-item">
-              <Link to="lists" className="nav-linkk">
-                Lists
+            <li>
+              <Link to="/completed" className="read-link">
+                Completed
               </Link>
             </li>
+            <div className="list-icon-text"></div>
           </ul>
         </div>
       </div>

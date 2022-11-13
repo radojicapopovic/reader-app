@@ -9,6 +9,7 @@
 }
 .back-btn:hover {
   color: teal;
+  transition: 0.2s;
 }
 .back-btn span {
   margin-left: 1rem;
@@ -56,15 +57,57 @@
   margin-top: 50px;
   background-color: #DCE2F0;
   padding: 5px;
-  height: 35px;
+  height: 45px;
   width: 150px;
   border-radius: 25px;
+}
+
+.btn-add:hover {
+  background-color: teal;
+  transition: 0.2s;
+  
 }
 
 .btn-text{
   color: #50586C;
   font-size: 14px;
 }
+
+.btn-text:hover {
+  background-color: teal;
+  transition: 0.5s;
+  color: #DCE2F0;
+}
+
+.btn-add2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  background-color: #DCE2F0;
+  padding: 5px;
+  height: 45px;
+  width: 150px;
+  border-radius: 25px;
+}
+
+.btn-add2:hover {
+  background-color: teal;
+  transition: 0.2s;
+  
+}
+
+.btn-text2{
+  color: #50586C;
+  font-size: 14px;
+}
+
+.btn-text2:hover {
+  background-color: teal;
+  transition: 0.5s;
+  color: #DCE2F0;
+}
+
+
 
 @media screen and (min-width: 768px) {
   .book-details-content {

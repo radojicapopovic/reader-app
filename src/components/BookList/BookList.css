@@ -11,9 +11,28 @@
   background-color: #DCE2F0;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 15px 0px;
   transition: var(--transition);
+  height: 100%;
+  width: 100%;
+}
+.all-books {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.img-info {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.bttns {
+  padding-left: 55px;
+  padding-bottom: 50px;
+  background-color: #DCE2F0;
 }
 .book-item:hover {
   background-color: rgba(0, 0, 0, 0.1);
+  color: #DCE2F0;
 }
 .book-item-img img {
   max-width: 180px;
@@ -38,6 +57,65 @@
   opacity: 0.6;
   font-style: italic;
   font-size: 14px;
+}
+
+.add-mylist-read{
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-add {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: #50586C;
+  padding: 5px;
+  height: 45px;
+  width: 150px;
+  border-radius: 25px;
+}
+
+.btn-add:hover {
+  background-color: teal;
+  transition: 0.2s;
+  
+}
+
+.btn-text{
+  color: #DCE2F0;
+  font-size: 14px;
+}
+
+.btn-text:hover {
+  background-color: teal;
+  transition: 0.5s;
+}
+
+.btn-add2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  background-color: #50586C;
+  padding: 5px;
+  height: 45px;
+  width: 150px;
+  border-radius: 25px;
+}
+
+.btn-add2:hover {
+  background-color: teal;
+  transition: 0.2s;
+  
+}
+
+.btn-text2{
+  color: #DCE2F0;
+  font-size: 14px;
+}
+
+.btn-text2:hover {
+  background-color: teal;
+  transition: 0.5s;
 }
 
 @media screen and (min-width: 600px) {

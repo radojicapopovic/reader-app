@@ -1,0 +1,48 @@
+.header-links {
+  display: flex;
+  margin-top: 10px;
+  justify-content: end;
+  gap: 40px;
+}
+
+/* .btn {
+  background-color: #dce2f0;
+  padding: 5px 15px;
+  height: 45px;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.btn:hover {
+    background-color: teal;
+  transition: 0.2s;
+  
+} */
+
+.mylist-link {
+    background-color: #dce2f0;
+  padding: 5px 15px;
+  height: 45px;
+  width: 100%;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+
+.read-link {
+    background-color: #dce2f0;
+  padding: 5px 15px;
+  height: 45px;
+  width: 100%;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+
+.mylist-link:hover {
+    background-color: teal;
+    transition: 0.2s;
+}
+
+.read-link:hover {
+    background-color: teal;
+    transition: 0.2s;
+}
