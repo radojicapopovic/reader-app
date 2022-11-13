@@ -1,0 +1,20 @@
+.ctrl-bttn{
+    position:sticky;
+    left: 527px;
+    bottom: 65px;
+    font-size: 35px;
+    border: black solid 2px;
+    padding: 5px;
+    height: 60px;
+    margin: 2px;
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+}
+.ctrl-bttn:hover {
+    opacity: 100;
+}
+.book-item-img {
+    position: static;
+    z-index: 1;
+}

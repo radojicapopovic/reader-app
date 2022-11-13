@@ -1,20 +1,29 @@
-// eslint-disable-next-line no-unused-vars
 import React, { createContext, useReducer, useEffect } from "react";
-import "./AppReducer";
 import AppReducer from "./AppReducer";
 
 const initialState = {
-  mylist: [],
-  completed: [],
+  mylist: localStorage.getItem("mylist")
+    ? JSON.parse(localStorage.getItem("mylist"))
+    : [],
+  completed: localStorage.getItem("complated")
+  ? JSON.parse(localStorage.getItem("complated"))
+  : [],
 };
-
+// Create context
 export const GlobalContext = createContext(initialState);
 
+// Provider components
 export const GlobalProvider = (props) => {
   const [state, dispatch] = useReducer(AppReducer, initialState);
 
-  const addBookToMyList = (data) => {
-    dispatch({ type: "ADD_BOOK_TO_MYLIST", payload: data });
+  useEffect(() => {
+    localStorage.setItem("mylist", JSON.stringify(state.mylist));
+    localStorage.setItem("complated", JSON.stringify(state.completed));
+  }, [state]);
+
+  // Actions
+  const addBookToMyList = (book) => {
+    dispatch({ type: "ADD_BOOK_TO_MYLIST", payload: book });
   };
 
   return (
