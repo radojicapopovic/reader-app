@@ -6,8 +6,8 @@ const initialState = {
     ? JSON.parse(localStorage.getItem("mylist"))
     : [],
   completed: localStorage.getItem("complated")
-  ? JSON.parse(localStorage.getItem("complated"))
-  : [],
+    ? JSON.parse(localStorage.getItem("complated"))
+    : [],
 };
 // Create context
 export const GlobalContext = createContext(initialState);
@@ -26,12 +26,22 @@ export const GlobalProvider = (props) => {
     dispatch({ type: "ADD_BOOK_TO_MYLIST", payload: book });
   };
 
+  const removeBookFromMyList = (id) => {
+    dispatch({ type: "REMOVE_BOOK_FROM_MYLIST", payload: id });
+  };
+
+  const addBookToComplated = (book) => {
+    dispatch({ type: "ADD_BOOK_TO_COMPLATED", payload: book });
+  };
+
   return (
     <GlobalContext.Provider
       value={{
         mylist: state.mylist,
         completed: state.completed,
         addBookToMyList,
+        removeBookFromMyList,
+        addBookToComplated,
       }}
     >
       {props.children}
