@@ -12,11 +12,6 @@ const Navbar = () => {
       <div className="container navbar-content flex">
         <div className="brand-and-toggler flex flex-sb">
           <Link to="/" className="navbar-brand flex">
-            <img
-              className="logo"
-              src="https://www.freepnglogos.com/uploads/book-png/colorful-books-transparent-background-12.png"
-              alt="logo"
-            ></img>
             <span className="text">Reader APP</span>
           </Link>
           <button
